@@ -6,7 +6,6 @@ __pycache__/
 *.pyc
 project/voting/.venv/
 project/voting/db.sqlite3
-project/aadhaar_mock_data_100_records.xlsx
 
 # editor/OS cruft
 .DS_Store
