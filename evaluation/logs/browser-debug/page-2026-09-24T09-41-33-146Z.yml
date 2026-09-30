@@ -1,0 +1,13 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic "Navigation Bar" [ref=e4] [cursor=pointer]:
+      - generic [ref=e6]:
+        - generic [ref=e7]: Indian Election
+        - generic [ref=e8]: using blockchain
+    - generic [ref=e9]:
+      - generic [ref=e10]: Please Enter your Aadhar Card Number to Authenticate yourself in order to cast your priceless vote.
+      - generic [ref=e11]: Indian Election
+  - generic [ref=e12]:
+    - generic [ref=e14]: Indian Election
+    - generic [ref=e15]: using BlockChain
+    - generic [ref=e16]: Please wait...

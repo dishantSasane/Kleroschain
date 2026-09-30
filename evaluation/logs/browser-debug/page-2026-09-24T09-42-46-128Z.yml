@@ -1,0 +1,14 @@
+- generic [ref=e1]:
+  - generic [ref=e19]:
+    - generic [ref=e20]: Enter Your Aadhar Card Number (UIDAI Number)
+    - generic [ref=e21]:
+      - textbox "xxxx xxxx xxxx" [ref=e22]: "12345"
+      - button "Authenticate" [active] [ref=e23] [cursor=pointer]
+  - generic [ref=e3]:
+    - generic "Navigation Bar" [ref=e4] [cursor=pointer]:
+      - generic [ref=e6]:
+        - generic [ref=e7]: Indian Election
+        - generic [ref=e8]: using blockchain
+    - generic [ref=e9]:
+      - generic [ref=e24]: Please enter a valid 12-digit Aadhar number.
+      - generic [ref=e10]: Please Enter your Aadhar Card Number to Authenticate yourself in order to cast your priceless vote.

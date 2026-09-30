@@ -1,0 +1,33 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e26]:
+    - table [ref=e28]:
+      - rowgroup [ref=e29]:
+        - row [ref=e30]:
+          - cell "Aadhar No.:" [ref=e31]
+          - cell "505229928339" [ref=e32]
+          - cell [ref=e33]
+        - row [ref=e35]:
+          - cell "Name:" [ref=e36]
+          - cell "Dishant Sasane" [ref=e37]
+        - row [ref=e38]:
+          - cell "DOB:" [ref=e39]
+          - cell "June 28, 2005" [ref=e40]
+        - row [ref=e41]:
+          - cell "Pincode No.:" [ref=e42]
+          - cell "440631" [ref=e43]
+        - row [ref=e44]:
+          - cell "Region:" [ref=e45]
+          - cell "Nashik" [ref=e46]
+    - generic [ref=e47]:
+      - generic [ref=e48]: "Associated Email-ID: (Key will be send to this email-id, please verify it)"
+      - generic [ref=e49]:
+        - textbox "Email-ID" [disabled] [ref=e50]: dishants0605@gmail.com
+        - text: Send OTP
+    - generic [ref=e51]: Please verify your Email-ID. Key will be sent to this Email-ID.
+  - generic [ref=e3]:
+    - generic "Navigation Bar" [ref=e4] [cursor=pointer]:
+      - generic [ref=e6]:
+        - generic [ref=e7]: Indian Election
+        - generic [ref=e8]: using blockchain
+    - generic [ref=e9]: Successfully Authenticated, Vote Now!
+    - generic [ref=e53]: 505229928339 (Dishant Sasane)

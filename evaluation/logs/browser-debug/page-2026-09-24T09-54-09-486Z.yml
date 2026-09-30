@@ -1,0 +1,13 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e3]:
+    - generic "Navigation Bar" [ref=f8e4] [cursor=pointer]:
+      - generic [ref=f8e6]:
+        - generic [ref=f8e7]: Indian Election
+        - generic [ref=f8e8]: using blockchain
+    - generic [ref=f8e9]:
+      - generic [ref=f8e10]: Block Information.
+      - generic [ref=f8e11]: Indian Election
+  - generic [ref=f8e12]:
+    - generic [ref=f8e14]: Indian Election
+    - generic [ref=f8e15]: using BlockChain
+    - generic [ref=f8e16]: Please wait...

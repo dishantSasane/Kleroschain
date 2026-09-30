@@ -1,0 +1,13 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic "Navigation Bar" [ref=e4] [cursor=pointer]:
+      - generic [ref=e6]:
+        - generic [ref=e7]: Indian Election
+        - generic [ref=e8]: using blockchain
+    - generic [ref=e9]:
+      - generic [ref=e25]: Invalid Aadhar, Please Enter Correct Aadhar Number!
+      - generic [ref=e24]: Please enter a valid 12-digit Aadhar number.
+  - generic [ref=e12]:
+    - generic [ref=e14]: Indian Election
+    - generic [ref=e15]: using BlockChain
+    - generic [ref=e16]: Please wait, you are being authenticated.

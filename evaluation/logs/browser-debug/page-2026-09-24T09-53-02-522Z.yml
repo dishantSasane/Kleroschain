@@ -1,0 +1,13 @@
+- generic [active] [ref=f5e1]:
+  - generic [ref=f5e3]:
+    - generic "Navigation Bar" [ref=f5e4] [cursor=pointer]:
+      - generic [ref=f5e6]:
+        - generic [ref=f5e7]: Indian Election
+        - generic [ref=f5e8]: using blockchain
+    - generic [ref=f5e9]:
+      - generic [ref=f5e10]: All mined blocks are below. Click on block id to get information about that block.
+      - generic [ref=f5e11]: Indian Election
+  - generic [ref=f5e12]:
+    - generic [ref=f5e14]: Indian Election
+    - generic [ref=f5e15]: using BlockChain
+    - generic [ref=f5e16]: Please wait...
