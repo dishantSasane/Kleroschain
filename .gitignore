@@ -10,3 +10,4 @@ project/aadhaar_mock_data_100_records.xlsx
 
 # editor/OS cruft
 .DS_Store
+project/.~lock.*

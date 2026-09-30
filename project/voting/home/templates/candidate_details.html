@@ -1,0 +1,91 @@
+{% load static %}
+
+<div class="candidate-details-div">
+    <div id="verification-state"
+         data-phone-verified="{{ details.is_phone_verified|yesno:'1,0' }}"
+         data-email-verified="{{ details.email|default:'' }}">
+    </div>
+
+    <div class="candidate-details">
+        
+        <table class="details">
+            <tr class="details-row">
+                <td class="des">Aadhar No.:</td>
+                <td>{{ details.uuid }}</td>
+                <td rowspan="5" style="text-align: center;"><img class="candidate-photo" src = '{{ details.profile_pic }}'></td>
+            </tr>
+            <tr class="details-row">
+                <td class="des">Name:</td>
+                <td>{{ details.name }}</td>
+            </tr>
+            <tr class="details-row">
+                <td class="des">DOB:</td>
+                <td>{{ details.dob }}</td>
+            </tr>
+            <tr class="details-row">
+                <td class="des">Pincode No.:</td>
+                <td>{{ details.pincode }}</td>
+            </tr>
+            <tr class="details-row">
+                <td class="des">Region:</td>
+                <td>{{ details.region }}</td>
+            </tr>
+        </table>
+        
+    </div>
+
+    <div class="associated-email-div" id="email-verification-section">
+        <div>
+            Associated Email-ID:
+            <br>
+            <span>(Key will be send to this email-id, please verify it)</span>
+        </div>
+        <div class="associated-email-id">
+            <input class="email-input" id="email-input" value="{{ details.email }}" disabled placeholder="Email-ID">
+            <img id="verified-badge" src="{% static 'images/verified.png' %}">
+            <a class="button" id="send-otp">Send OTP</a>
+        </div>
+    </div>
+
+    <div class="email-alert-msg" id="email-alert-msg">Verify your phone number first to unlock email OTP.</div>
+
+    <!-- Phone OTP Verification -->
+    <div class="associated-phone-div" id="phone-verification-section" style="margin-top: 20px;">
+        <div>
+            Phone Number:
+            <br>
+            <span>(OTP will be sent to your phone number registered in the Aadhaar dataset)</span>
+        </div>
+        <div class="associated-phone-id">
+            <input class="phone-input" id="phone-input" value="{{ details.phone_number }}" disabled style="padding: 10px; width: 250px; margin-right: 10px;">
+            <a class="button" id="send-phone-otp">Send Phone OTP</a>
+        </div>
+    </div>
+    <div class="phone-alert-msg" id="phone-alert-msg">Please verify your registered phone number using the OTP sent to it.</div>
+
+    <div>
+        <a class="vote-now disabled" id="vote-now" style="display: none;">Vote Now</a>
+    </div>
+
+</div>
+
+<div class="otp-verification">
+    <div class="otp-div">
+        <span id="otp-verfication-email">Email</span>
+        <input id="otp-input" placeholder="Enter 6 characters OTP sent to your Email-ID." style="width: 350px;">
+        <a class="button" id="verify">Verify</a>
+        <a class="button" id="cancel-otp">Cancel</a>
+    </div>
+</div>
+
+<!-- NEW FEATURE: Phone OTP Verification -->
+<div class="phone-otp-verification" id="phone-otp-verification" style="display: none;">
+    <div class="phone-otp-div">
+        <span id="phone-otp-verification-number">Phone</span>
+        <input id="phone-otp-input" placeholder="Enter 6 digit OTP sent to your phone number." style="width: 350px;">
+        <a class="button" id="verify-phone-otp">Verify</a>
+        <a class="button" id="cancel-phone-otp">Cancel</a>
+    </div>
+</div>
+
+<script src="{% static 'scripts/candidate_details.js' %}"></script>

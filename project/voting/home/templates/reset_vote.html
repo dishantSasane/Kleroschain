@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+<script src="{% static 'scripts/base.js' %}"></script>
+<script src="{% static 'scripts/csrf.js' %}"></script>
+{% endblock %}
+
+{% block main_content %}
+
+<div class="authentication">
+    <span>Reset vote for an Aadhaar number (testing only)</span>
+    <br>
+    <form method="post">
+        {% csrf_token %}
+        <div class="input-section">
+            <input type="text" name="aadhaar_no" placeholder="123456789012"
+                   class="input-text" autocomplete="off">
+            <button type="submit" class="submit">Reset Vote</button>
+        </div>
+    </form>
+
+    {% if status %}
+        <div style="margin-top: 20px; color: white;">
+            {{ status }}
+        </div>
+    {% endif %}
+</div>
+
+<script>
+    // Hide the full-screen loading overlay on this page
+    $(document).ready(function () {
+        hide_loading();
+    });
+</script>
+
+{% endblock %}
+
+
